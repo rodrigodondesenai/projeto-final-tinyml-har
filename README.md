@@ -2,6 +2,14 @@
 
 Projeto final da UC **IA Embarcada e Modelos Compactos**: seis atividades do UCI HAR, MLP compacta, quantização INT8 e firmware ESP-IDF para ESP32-S3 + MPU6050.
 
+## Créditos acadêmicos
+
+Trabalho desenvolvido em grupo para a Unidade Curricular **IA Embarcada e Modelos Compactos**.
+
+- Rodrigo Teles Dondé
+- Gabriel Monteiro de Souza
+- Renan Cardoso dos Santos
+
 O objetivo é reconhecer padrões de movimento para um protótipo de acompanhamento de atividades com processamento local. Não é um dispositivo médico. As relações entre seis canais, postura e intensidade variam entre pessoas: limiares isolados não representam bem as seis classes. O modelo aprende essas relações a partir de exemplos. Isso não demonstra superioridade sobre toda solução convencional; uma comparação com baselines é uma evolução possível.
 
 ## Estado e resultados
