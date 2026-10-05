@@ -28,6 +28,13 @@ limiar. O protótipo demonstra processamento local e não é um dispositivo méd
 | Avaliação e evidências | Foram medidos accuracy, macro F1, tamanho e equivalência entre desktop e firmware; os testes automatizados também verificam os artefatos. | [Validação](docs/validacao.md), [evidências](evidencias/README.md) |
 | Repositório público e organização do código | Código, modelos, documentação, testes e evidências estão versionados; `main` e `develop` iniciam o fluxo de trabalho definido para o grupo. | [Git Flow](docs/git_flow.md) |
 
+## Entrega final
+
+O repositório público e o arquivo com seu link já estão preparados. Ainda são
+necessários o PDF da apresentação, o vídeo de demonstração e contribuições
+reais de cada integrante, com commits feitos pelas respectivas contas GitHub.
+Consulte o [checklist de entrega](docs/entrega.md).
+
 ## Resultados e estado da demonstração
 
 [Conferência final dos requisitos](docs/conferencia_final.md) reúne as

@@ -17,11 +17,10 @@ Foram usadas duas fontes distintas:
   ao professor e as escolhas deste projeto, incluindo os modos LIVE/REPLAY,
   métricas, Git Flow e documentação. Essa lista foi conferida item a item.
 
-O PDF não contém uma rubrica detalhada de pontuação, nota mínima de accuracy,
-formato dos slides, link de submissão ou exigência inequívoca de relatório
-PDF/vídeo. Não inventamos esses critérios nem garantimos aprovação acadêmica.
-Se houver outro enunciado no ambiente da disciplina, ele deve ser comparado
-com este checklist antes da submissão.
+Além dessas fontes, os requisitos de entrega informados posteriormente pelo
+aluno exigem PDF da apresentação, vídeo de demonstração, repositório público
+com Git Flow e commits de todos os integrantes. O checklist correspondente está
+em `docs/entrega.md`.
 
 ## Lista de requisitos obrigatórios informada no texto
 
@@ -34,7 +33,7 @@ com este checklist antes da submissão.
 | Pipeline completa de entrada até inferência | Atendido em REPLAY e LIVE no Wokwi | REPLAY: amostras reais → buffer → features → scaler → INT8 → TFLM. LIVE: MPU6050 simulado → I2C → janela → features → INT8 → classe/confiança. |
 | Problema real e justificativa para IA | Justificativa documentada | Reconhecimento de atividades a partir de padrões multicanais; README/metodologia. Há generalização medida em pessoas não vistas. Não foi demonstrada superioridade sobre todas as soluções de regras nem há estudo de impacto em uso real. |
 | Código organizado e legível | Estrutura atendida, revisão qualitativa | Módulos ML separados; núcleo C compartilhado; driver, inferência e aplicação separados; scripts e testes. A avaliação de legibilidade pelo professor é subjetiva. |
-| Preparar repositório público com Git Flow | Atendido | Repositório público, commit inicial, branches `main` e `develop`, `.gitignore`, CI e `docs/git_flow.md`. |
+| Preparar repositório público com Git Flow e commits do grupo | Parcialmente atendido | Repositório público, commit inicial, branches `main` e `develop`, `.gitignore`, CI e `docs/git_flow.md`; faltam commits reais de Gabriel e Renan. |
 | Publicação após autorização | Atendido | Commits e push foram realizados somente após autorização explícita do aluno. |
 
 ## Conferência técnica do projeto escolhido

@@ -41,7 +41,7 @@ está documentado em `docs/git_flow.md`.
 | Pipeline de entrada à inferência | Atendido | REPLAY e LIVE executados no Wokwi |
 | Problema que exige IA | Atendido | Classificação de seis atividades a partir de seis canais inerciais; justificativa no README |
 | Código organizado/legível | Atendido | Separação ML, núcleo C, driver, inferência, firmware, scripts e testes |
-| GitHub público e Git Flow | Atendido | Repositório público, branches `main` e `develop`, `.gitignore`, CI e guia Git Flow |
+| GitHub público e Git Flow | Parcialmente atendido | Repositório público, branches `main` e `develop`, `.gitignore`, CI e guia Git Flow. Ainda faltam commits reais de Gabriel e Renan. |
 | Publicação | Concluída com autorização do aluno | Commits e push realizados após a revisão dos arquivos |
 
 ## Métricas finais
@@ -82,9 +82,10 @@ desktop e foi mantida para a demonstração.
 
 ## Antes de entregar
 
-1. Transformar `docs/guia_apresentacao.md` em slides e ensaiar até 10 minutos.
-2. Revisar o conteúdo público, a licença do código e a atribuição do dataset.
-3. Criar branches `feature/*` para eventuais ajustes e integrar mudanças por
-   Pull Request para `develop`, conforme `docs/git_flow.md`.
-4. Conferir na plataforma da disciplina se a entrega exige link, slides,
-   relatório ou vídeo além da apresentação. Isso não está especificado no PDF.
+1. Transformar `docs/guia_apresentacao.md` em slides, exportar o PDF e ensaiar
+   até 10 minutos.
+2. Gravar o vídeo de demonstração usando o REPLAY no Wokwi.
+3. Convidar Gabriel e Renan no GitHub para que façam contribuições reais e
+   commits próprios, integrados por Pull Request para `develop`.
+4. Enviar o PDF, o vídeo e `entrega/link-repositorio.txt` na plataforma da
+   disciplina.
