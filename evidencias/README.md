@@ -11,6 +11,10 @@ O [serial LIVE](live-wokwi.txt) comprova I2C, formação de janela e inferência
 contínua no Wokwi. A classe LAYING do sensor parado não é uma medição de
 accuracy de atividade humana.
 
+O **vídeo de demonstração** não é versionado (`*.mp4` está no `.gitignore`). O link,
+a conferência cena a cena e o roteiro de narração estão em
+[`docs/demonstracao.md`](../docs/demonstracao.md).
+
 Salvar aqui resultados reais de execução, sem copiar saídas esperadas como medições:
 
 - Testes Python/C e contratos dos modelos.
