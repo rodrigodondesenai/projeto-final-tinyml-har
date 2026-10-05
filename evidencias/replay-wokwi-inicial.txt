@@ -1,0 +1,12 @@
+Fonte: monitor serial Wokwi, copiado pelo usuario em 2026-10-05.
+Firmware inicial com kernels ESP-NN otimizados; resultado real FAIL.
+
+I (243) HAR: modelo_bytes=4240 arena_usada=2876 arena_reservada=32768
+I (247) HAR: mode=REPLAY source=UCI_HAR sample_hz=50 window=128
+I (264) HAR: replay=0 test_index=79 truth=WALKING class=WALKING_UPSTAIRS confidence=0.371094 invoke_us=5355 feature_error=0.00000000 probability_error=0.37500000 parity=FAIL
+I (480) HAR: replay=1 test_index=133 truth=WALKING_UPSTAIRS class=LAYING confidence=0.507812 invoke_us=5355 feature_error=0.00000000 probability_error=0.55078125 parity=FAIL
+I (697) HAR: replay=2 test_index=109 truth=WALKING_DOWNSTAIRS class=LAYING confidence=0.453125 invoke_us=5354 feature_error=0.00000000 probability_error=0.45312500 parity=FAIL
+I (914) HAR: replay=3 test_index=31 truth=SITTING class=STANDING confidence=0.421875 invoke_us=5355 feature_error=0.00000000 probability_error=0.24218750 parity=FAIL
+I (1130) HAR: replay=4 test_index=0 truth=STANDING class=STANDING confidence=0.382812 invoke_us=5355 feature_error=0.00000000 probability_error=0.60156250 parity=FAIL
+I (1346) HAR: replay=5 test_index=55 truth=LAYING class=LAYING confidence=0.894531 invoke_us=5356 feature_error=0.00000000 probability_error=0.10156250 parity=FAIL
+I (1551) HAR: REPLAY_SUMMARY passed=0 total=6 status=FAIL

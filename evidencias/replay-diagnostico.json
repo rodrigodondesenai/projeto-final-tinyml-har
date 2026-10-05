@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-05",
+  "purpose": "Diagnostico da divergencia REPLAY relatada no Wokwi",
+  "backend": "ESP_NN_ANSI_C",
+  "build_exit_code": 0,
+  "application_bytes": 269440,
+  "application_sha256": "bad22330895f249eeadcf9d92f068786a5a521d6614cdf19ecbb50cccb0630a9",
+  "model_unchanged": true,
+  "thresholds_unchanged": true,
+  "runtime_validation": "PASS: 6/6 no Wokwi; serial real enviado pelo usuario",
+  "serial_evidence": "evidencias/replay-serial.txt",
+  "invoke_us_range_simulator": [
+    3105,
+    3130
+  ],
+  "printed_feature_error_max": 0.0,
+  "printed_probability_error_max": 0.0,
+  "physical_device_validated": false
+}

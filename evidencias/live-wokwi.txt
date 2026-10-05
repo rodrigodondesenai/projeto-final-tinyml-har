@@ -1,0 +1,18 @@
+Fonte: serial real do Wokwi enviado pelo usuário em 05/10/2026.
+Backend ANSI C. Não é medição em placa física nem avaliação de accuracy.
+
+I (242) HAR: modelo_bytes=4240 arena_usada=860 arena_reservada=32768
+I (246) HAR: kernels=ESP_NN_ANSI_C
+W (249) HAR: mode=LIVE: transferencia UCI->MPU6050 ainda exige validacao com dados locais
+I (3026) HAR: class=LAYING confidence=0.996094 invoke_us=3125
+I (4306) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (5586) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (6866) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (8146) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (9426) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (10706) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (11986) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (13266) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (14546) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (15826) HAR: class=LAYING confidence=0.996094 invoke_us=3126
+I (17106) HAR: class=LAYING confidence=0.996094 invoke_us=3126

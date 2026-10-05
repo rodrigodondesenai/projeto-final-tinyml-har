@@ -1,0 +1,24 @@
+Branch inicial: main; sem commits, staging ou push.
+
+> git diff --stat
+(sem saida: arquivos ainda nao rastreados)
+
+> git status --short
+?? .gitattributes
+?? .github/
+?? .gitignore
+?? .vscode/
+?? README.md
+?? data/
+?? diagram.json
+?? docs/
+?? evidencias/
+?? firmware/
+?? ml/
+?? pytest.ini
+?? requirements-dev.txt
+?? requirements-lock-windows.txt
+?? requirements.txt
+?? scripts/
+?? tests/
+?? wokwi.toml

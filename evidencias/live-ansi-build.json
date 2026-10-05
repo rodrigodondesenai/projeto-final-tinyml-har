@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-05",
+  "mode": "LIVE",
+  "backend": "ESP_NN_ANSI_C",
+  "build_exit_code": 0,
+  "application_bytes": 268880,
+  "application_sha256": "7c63d7ac2e454e0fe968c3d8bae8218307c53eccb2b8effa25ea146e9269304a",
+  "runtime_validation": "pending",
+  "circuit_power_pin": "esp:3V3.1"
+}

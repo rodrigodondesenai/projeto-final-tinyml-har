@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'firmware/build/flasher_args.json'
+elf = 'firmware/build/tinyml_har.elf'

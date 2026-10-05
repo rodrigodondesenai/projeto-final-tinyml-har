@@ -1,0 +1,20 @@
+menu "TinyML HAR"
+    choice HAR_MODE
+        prompt "Fonte dos sinais"
+        default HAR_MODE_REPLAY
+        config HAR_MODE_REPLAY
+            bool "REPLAY: janelas reais UCI HAR"
+        config HAR_MODE_LIVE
+            bool "LIVE: MPU6050 (validacao de dominio necessaria)"
+    endchoice
+    config HAR_SDA_GPIO
+        int "GPIO SDA"
+        default 8
+    config HAR_SCL_GPIO
+        int "GPIO SCL"
+        default 9
+    config HAR_TENSOR_ARENA_BYTES
+        int "Arena TFLM em bytes"
+        default 32768
+        range 8192 131072
+endmenu

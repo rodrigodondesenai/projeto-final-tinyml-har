@@ -1,0 +1,7 @@
+# Python 3.11; ambiente local, CPU. Versoes intencionais e reproduziveis.
+numpy==1.26.4
+scikit-learn==1.5.2
+tensorflow==2.16.1
+keras==3.3.3
+pytest==8.3.5
+pypdf==5.9.0

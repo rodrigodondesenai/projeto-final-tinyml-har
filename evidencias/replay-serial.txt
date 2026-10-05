@@ -1,0 +1,12 @@
+Fonte: serial real do Wokwi enviado pelo usuario; escapes Markdown removidos.
+Backend ANSI C. Nao e saida sintetica nem benchmark de placa fisica.
+
+I (246) HAR: kernels=ESP_NN_ANSI_C
+I (249) HAR: mode=REPLAY source=UCI_HAR sample_hz=50 window=128
+I (263) HAR: replay=0 test_index=79 truth=WALKING class=WALKING_UPSTAIRS confidence=0.746094 invoke_us=3105 feature_error=0.00000000 probability_error=0.00000000 parity=PASS
+I (479) HAR: replay=1 test_index=133 truth=WALKING_UPSTAIRS class=WALKING_UPSTAIRS confidence=0.937500 invoke_us=3129 feature_error=0.00000000 probability_error=0.00000000 parity=PASS
+I (694) HAR: replay=2 test_index=109 truth=WALKING_DOWNSTAIRS class=WALKING_UPSTAIRS confidence=0.730469 invoke_us=3129 feature_error=0.00000000 probability_error=0.00000000 parity=PASS
+I (909) HAR: replay=3 test_index=31 truth=SITTING class=STANDING confidence=0.664062 invoke_us=3129 feature_error=0.00000000 probability_error=0.00000000 parity=PASS
+I (1123) HAR: replay=4 test_index=0 truth=STANDING class=STANDING confidence=0.984375 invoke_us=3130 feature_error=0.00000000 probability_error=0.00000000 parity=PASS
+I (1337) HAR: replay=5 test_index=55 truth=LAYING class=LAYING confidence=0.996094 invoke_us=3130 feature_error=0.00000000 probability_error=0.00000000 parity=PASS
+I (1541) HAR: REPLAY_SUMMARY passed=6 total=6 status=PASS

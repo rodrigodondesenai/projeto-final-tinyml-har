@@ -1,0 +1,13 @@
+Execucao real observada em 2026-10-05, Windows, Python 3.11, .venv local.
+Comando: .\.venv\Scripts\python.exe -m pytest -q
+Resultado final do pytest:
+.....................                                                    [100%]
+21 passed in 28.71s
+
+A primeira execucao em ambiente restrito teve 20 passed e um erro de permissao
+na criacao de tmp_path. A repeticao autorizada fora dessa restricao concluiu
+21 testes. Nao houve alteracao de logica para ignorar testes.
+
+O teste compila firmware/components/har_core/har_features.c com Zig 0.13.0
+na .venv, carrega a DLL via ctypes e compara com os calculos Python e os
+golden vectors. Isto e teste de C nativo no computador, nao execucao Xtensa.

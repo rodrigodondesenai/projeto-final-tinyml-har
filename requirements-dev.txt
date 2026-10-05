@@ -1,0 +1,3 @@
+-r requirements.txt
+# Compilador portatil para testar o C real do firmware no host.
+ziglang==0.13.0

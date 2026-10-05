@@ -1,0 +1,29 @@
+name: Validate HAR
+on: [push, pull_request]
+jobs:
+  python-and-c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+  firmware:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mode: [REPLAY, LIVE]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: v5.4.2
+          target: esp32s3
+          path: firmware
+          command: >-
+            if [ "${{ matrix.mode }}" = "LIVE" ]; then
+              idf.py -D SDKCONFIG_DEFAULTS='sdkconfig.defaults;sdkconfig.live.defaults' build;
+            else idf.py build; fi

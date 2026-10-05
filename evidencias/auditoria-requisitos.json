@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-05",
+  "pytest": {
+    "result": "21 passed",
+    "seconds": 3.6,
+    "command": "python -m pytest -q --basetemp tests/.build/auditoria-tmp"
+  },
+  "pip_check": "No broken requirements found.",
+  "model_hashes": "PASS",
+  "replay_binary_hash": "PASS",
+  "serial_replay": "PASS 6/6",
+  "screenshot_sha256": "27cba34b3a761fff425ad0a18ccbad8cadf088aa3dd47793aab25e4786ad0777",
+  "confusion_matrix_counts_and_accuracy": "PASS for 3 models; 2947 test windows",
+  "live_runtime": {
+    "status": "PASS: execução contínua no Wokwi",
+    "backend": "ESP_NN_ANSI_C",
+    "first_inference_ms": 3026,
+    "period_ms": 1280,
+    "prediction": "LAYING",
+    "confidence": 0.996094,
+    "invoke_us_range": [3125, 3126],
+    "arena_used_bytes": 860,
+    "evidence": "evidencias/live-wokwi.txt",
+    "accuracy_measurement": "not performed; sensor was stationary in Wokwi"
+  },
+  "github_publication": "repository exists remotely; local remote, commits and push still pending authorization"
+}
