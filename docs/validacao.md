@@ -111,4 +111,11 @@ Alternativamente escolha LIVE no `menuconfig` e recompile conforme README. A cri
 
 ## Git
 
-Repositório local inicializado, branch inicial `main`, nenhum commit, staging ou push. `git diff --stat` vazio é esperado porque todos os arquivos são novos e não rastreados. `git status --short` os exibe com `??`. Inventário completo em `docs/arquivos_criados.md`; snapshot dos comandos em `evidencias/git-status.txt`.
+O repositório público está em
+[rodrigodondesenai/projeto-final-tinyml-har](https://github.com/rodrigodondesenai/projeto-final-tinyml-har),
+com as branches `main` e `develop` publicadas. O commit inicial reúne código,
+modelos, testes, documentação e evidências. Para alterações futuras, crie uma
+branch `feature/*` a partir de `develop` e abra Pull Request para integração,
+conforme [docs/git_flow.md](git_flow.md). O inventário do projeto está em
+`docs/arquivos_criados.md`; `evidencias/git-status.txt` é um registro histórico
+feito antes da publicação.
