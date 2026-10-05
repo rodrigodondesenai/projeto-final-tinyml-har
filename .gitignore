@@ -12,6 +12,9 @@ firmware/sdkconfig.old
 firmware/sdkconfig.live
 firmware/sdkconfig.live.old
 tests/.build/
+entrega/*.pdf
+entrega/*.html
+entrega/*.mp4
 *.log
 .env
 *.pem
