@@ -1,22 +1,42 @@
 # Reconhecimento de atividades humanas com TinyML
 
-Projeto final da UC **IA Embarcada e Modelos Compactos**: seis atividades do UCI HAR, MLP compacta, quantização INT8 e firmware ESP-IDF para ESP32-S3 + MPU6050.
+> **Projeto final — Unidade Curricular: IA Embarcada e Modelos Compactos**
 
-## Créditos acadêmicos
+## Identificação acadêmica
 
-Trabalho desenvolvido em grupo para a Unidade Curricular **IA Embarcada e Modelos Compactos**.
+Este projeto foi desenvolvido coletivamente pelos três integrantes abaixo para
+atender à proposta de um protótipo funcional de IA embarcada. O trabalho aplica
+um modelo compacto de reconhecimento de atividades humanas em ESP32-S3, com
+sensor MPU6050 e simulação no Wokwi.
 
-- RODRIGO TELES DONDÉ
+- Rodrigo Teles Dondé
 - Gabriel Monteiro de Souza
 - Renan Cardoso dos Santos
 
-O objetivo é reconhecer padrões de movimento para um protótipo de acompanhamento de atividades com processamento local. Não é um dispositivo médico. As relações entre seis canais, postura e intensidade variam entre pessoas: limiares isolados não representam bem as seis classes. O modelo aprende essas relações a partir de exemplos. Isso não demonstra superioridade sobre toda solução convencional; uma comparação com baselines é uma evolução possível.
+## Objetivo e justificativa
 
-## Estado e resultados
+O objetivo é reconhecer seis atividades humanas a partir de sinais de
+acelerômetro e giroscópio: `WALKING`, `WALKING_UPSTAIRS`,
+`WALKING_DOWNSTAIRS`, `SITTING`, `STANDING` e `LAYING`. A classificação exige
+analisar conjuntamente padrões temporais de movimento e postura em seis canais;
+por isso foi utilizado aprendizado de máquina em vez de regras isoladas por
+limiar. O protótipo demonstra processamento local e não é um dispositivo médico.
 
-[Conferência final dos requisitos e próximos passos](docs/conferencia_final.md),
-com evidências de cada item, REPLAY e LIVE validados no Wokwi e a pendência de
-publicação no GitHub.
+## Como o projeto atende aos requisitos da atividade
+
+| Requisito informado para a atividade | Implementação e motivo | Evidência |
+|---|---|---|
+| Dados coerentes com o sensor e treinamento de modelo | Utiliza o UCI HAR, com aceleração total e giroscópio, para treinar uma MLP de 1.814 parâmetros sem misturar voluntários de treino e teste. | [Metodologia](docs/metodologia.md), [treinamento](ml/reports/training.json) |
+| Conversão e compactação para embarcados | O modelo foi convertido para TFLite INT8 para reduzir memória e permitir inferência no microcontrolador. | [Conversão e métricas](ml/reports/results.md) |
+| Deploy real ou simulado | Firmware ESP-IDF executa no ESP32-S3 simulado com MPU6050 no Wokwi. | [Arquitetura](docs/arquitetura.md), `diagram.json` |
+| Pipeline de ponta a ponta | As amostras são transformadas em 36 features, normalizadas, quantizadas e classificadas pelo TensorFlow Lite Micro. | [Arquitetura](docs/arquitetura.md) |
+| Avaliação e evidências | Foram medidos accuracy, macro F1, tamanho e equivalência entre desktop e firmware; os testes automatizados também verificam os artefatos. | [Validação](docs/validacao.md), [evidências](evidencias/README.md) |
+| Repositório público e organização do código | Código, modelos, documentação, testes e evidências estão versionados; `main` e `develop` iniciam o fluxo de trabalho definido para o grupo. | [Git Flow](docs/git_flow.md) |
+
+## Resultados e estado da demonstração
+
+[Conferência final dos requisitos](docs/conferencia_final.md) reúne as
+evidências técnicas e os limites da demonstração.
 
 **REPLAY validado no Wokwi: 6/6 comparações PASS com kernels ANSI C.**
 A execução inicial com kernels otimizados apresentou divergência de saída;

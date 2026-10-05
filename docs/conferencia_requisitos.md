@@ -3,7 +3,7 @@
 Auditoria em 05/10/2026. Conclusão: há um protótipo de IA embarcada executado
 no ESP32-S3 simulado, com treinamento, quantização, métricas e evidência de
 equivalência. As demonstrações REPLAY e LIVE estão comprovadas no Wokwi. A
-apresentação e a publicação ainda devem ser tratados separadamente.
+apresentação deve ser tratada separadamente; a publicação no GitHub já foi concluída.
 
 ## Quais requisitos foram conferidos
 
@@ -34,8 +34,8 @@ com este checklist antes da submissão.
 | Pipeline completa de entrada até inferência | Atendido em REPLAY e LIVE no Wokwi | REPLAY: amostras reais → buffer → features → scaler → INT8 → TFLM. LIVE: MPU6050 simulado → I2C → janela → features → INT8 → classe/confiança. |
 | Problema real e justificativa para IA | Justificativa documentada | Reconhecimento de atividades a partir de padrões multicanais; README/metodologia. Há generalização medida em pessoas não vistas. Não foi demonstrada superioridade sobre todas as soluções de regras nem há estudo de impacto em uso real. |
 | Código organizado e legível | Estrutura atendida, revisão qualitativa | Módulos ML separados; núcleo C compartilhado; driver, inferência e aplicação separados; scripts e testes. A avaliação de legibilidade pelo professor é subjetiva. |
-| Preparar repositório público com Git Flow | Preparação atendida; publicação/histórico pendentes | `.gitignore`, README, workflow CI e `docs/git_flow.md`; repositório local sem commits, remoto ou branches com histórico. Não alegar que Git Flow já foi executado. |
-| Não fazer commits/push automaticamente | Respeitado | Sem commits, staging, remoto ou push nesta implementação. |
+| Preparar repositório público com Git Flow | Atendido | Repositório público, commit inicial, branches `main` e `develop`, `.gitignore`, CI e `docs/git_flow.md`. |
+| Publicação após autorização | Atendido | Commits e push foram realizados somente após autorização explícita do aluno. |
 
 ## Conferência técnica do projeto escolhido
 
@@ -88,8 +88,8 @@ original, que continua sendo evidência válida da inferência REPLAY.
 1. **Apresentação:** transformar o roteiro em slides e ensaiar até 10 minutos.
    Mostrar problema, dataset/split, 36 features, MLP, tabela FP32/INT8, matriz
    de confusão, execução e limitações. Usar a captura/serial como backup.
-2. **Entrega GitHub:** revisar arquivos/licença e executar publicação e Git
-   Flow manualmente, respeitando a proibição atual de commits/push automáticos.
+2. **Entrega GitHub:** revisar arquivos/licença e, caso ocorram ajustes,
+   trabalhar em `feature/*` e integrar por Pull Request para `develop`.
 3. **Conferir o local de entrega:** confirmar no ambiente da disciplina se
    pedem link, slides, relatório ou vídeo além da apresentação. Esses detalhes
    não constam das fontes recebidas.

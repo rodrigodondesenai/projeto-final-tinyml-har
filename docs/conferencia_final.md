@@ -11,11 +11,9 @@ O protótipo está tecnicamente pronto para apresentação. Todos os requisitos
 técnicos detalhados foram atendidos com dados, treinamento, conversão INT8,
 firmware ESP-IDF, deploy simulado, REPLAY, LIVE, testes e documentação.
 
-A única pendência formal da lista é a publicação: o repositório público foi
-criado no GitHub, mas o diretório local ainda não tem remoto, commits ou push.
-Portanto, a preparação para Git Flow está pronta, mas o requisito de manter o
-projeto em um repositório público só estará completamente finalizado após a
-publicação manual autorizada pelo aluno.
+O repositório está público no GitHub, com o commit inicial e as branches
+`main` e `develop` publicados. O fluxo de trabalho para as próximas alterações
+está documentado em `docs/git_flow.md`.
 
 ## Verificação executada nesta conferência
 
@@ -43,8 +41,8 @@ publicação manual autorizada pelo aluno.
 | Pipeline de entrada à inferência | Atendido | REPLAY e LIVE executados no Wokwi |
 | Problema que exige IA | Atendido | Classificação de seis atividades a partir de seis canais inerciais; justificativa no README |
 | Código organizado/legível | Atendido | Separação ML, núcleo C, driver, inferência, firmware, scripts e testes |
-| GitHub público e Git Flow | Pendente de publicação | Estrutura, `.gitignore`, CI e guia Git Flow prontos; remoto/commits/push ausentes localmente |
-| Sem commits/push automáticos | Atendido | Nenhuma ação de publicação foi executada nesta implementação |
+| GitHub público e Git Flow | Atendido | Repositório público, branches `main` e `develop`, `.gitignore`, CI e guia Git Flow |
+| Publicação | Concluída com autorização do aluno | Commits e push realizados após a revisão dos arquivos |
 
 ## Métricas finais
 
@@ -86,8 +84,7 @@ desktop e foi mantida para a demonstração.
 
 1. Transformar `docs/guia_apresentacao.md` em slides e ensaiar até 10 minutos.
 2. Revisar o conteúdo público, a licença do código e a atribuição do dataset.
-3. Conectar o repositório local ao GitHub criado, revisar o staging, fazer o
-   primeiro commit e push manualmente, depois criar `develop` e branches de
-   trabalho conforme `docs/git_flow.md`.
+3. Criar branches `feature/*` para eventuais ajustes e integrar mudanças por
+   Pull Request para `develop`, conforme `docs/git_flow.md`.
 4. Conferir na plataforma da disciplina se a entrega exige link, slides,
    relatório ou vídeo além da apresentação. Isso não está especificado no PDF.
