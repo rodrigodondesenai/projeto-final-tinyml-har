@@ -2,16 +2,11 @@
 
 > **Projeto final — Unidade Curricular: IA Embarcada e Modelos Compactos**
 
-## Identificação acadêmica
+## Integrantes do grupo
 
-Este projeto foi desenvolvido coletivamente pelos três integrantes abaixo para
-atender à proposta de um protótipo funcional de IA embarcada. O trabalho aplica
-um modelo compacto de reconhecimento de atividades humanas em ESP32-S3, com
-sensor MPU6050 e simulação no Wokwi.
-
-- Rodrigo Teles Dondé
 - Gabriel Monteiro de Souza
 - Renan Cardoso dos Santos
+- Rodrigo Teles Dondé
 
 ## Objetivo e justificativa
 
