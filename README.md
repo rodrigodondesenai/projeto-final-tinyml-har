@@ -6,7 +6,7 @@ Projeto final da UC **IA Embarcada e Modelos Compactos**: seis atividades do UCI
 
 Trabalho desenvolvido em grupo para a Unidade Curricular **IA Embarcada e Modelos Compactos**.
 
-- Rodrigo Teles Dondé
+- RODRIGO TELES DONDÉ
 - Gabriel Monteiro de Souza
 - Renan Cardoso dos Santos
 
