@@ -61,6 +61,28 @@ Os modelos e relatórios medidos estão em [ml/reports/results.md](ml/reports/re
 
 Comparação na mesma base de 2.947 janelas. O FlatBuffer INT8 é 53,26% menor; a queda de accuracy é 0,136 ponto percentual. O arquivo Keras inclui estado de treinamento, portanto não é a base adequada para medir a compressão dos pesos. Não se alteraram hiperparâmetros após observar o teste.
 
+## Execução em Dev Container
+
+Abra a raiz no VS Code, com Docker em modo Linux e a extensão **Dev Containers**
+instalada, e execute **Dev Containers: Reopen in Container**. A configuração
+instala o ambiente e executa os testes, sem retreinar nem substituir os artefatos.
+Python 3.11, bibliotecas com versões travadas e ESP-IDF 5.4.2 ficam disponíveis.
+
+No terminal do contêiner, na raiz:
+
+```bash
+python -m pytest -q
+bash scripts/build_firmware.sh REPLAY
+bash scripts/build_firmware.sh LIVE
+python scripts/select_wokwi_mode.py REPLAY
+```
+
+Para executar novamente o pipeline completo, use
+`bash scripts/run_pipeline.sh` (aceita `--epochs 150` e `--skip-download`).
+O procedimento de simulação continua sendo **Wokwi: Start Simulator**.
+Consulte [o guia do ambiente](docs/devcontainer.md) para isolamento dos builds,
+dependências, acesso à placa e validação independente do VS Code.
+
 ## Execução Python (PowerShell, na raiz)
 
 ```powershell
