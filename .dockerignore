@@ -1,0 +1,6 @@
+**
+!requirements.txt
+!requirements-dev.txt
+!requirements-lock-linux.txt
+!.devcontainer/
+!.devcontainer/**

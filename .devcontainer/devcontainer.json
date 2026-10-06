@@ -1,0 +1,24 @@
+{
+  "name": "TinyML HAR (Python 3.11 / ESP-IDF 5.4.2)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "options": ["--platform=linux/amd64"]
+  },
+  "runArgs": ["--platform=linux/amd64"],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/tinyml-har,type=bind",
+  "workspaceFolder": "/workspaces/tinyml-har",
+  "overrideCommand": true,
+  "remoteUser": "root",
+  "postCreateCommand": "python -m pip check && python -m pytest -q",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "wokwi.wokwi-vscode", "espressif.esp-idf-extension"],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/har-venv/bin/python",
+        "python.terminal.activateEnvironment": false,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
