@@ -15,6 +15,10 @@ tests/.build/
 entrega/*.pdf
 entrega/*.html
 entrega/*.mp4
+# Vídeos de demonstração são publicados por link (docs/demonstracao.md), não versionados.
+*.mp4
+# Configuração local do VS Code (caminhos do ESP-IDF de cada máquina); extensions.json continua versionado.
+.vscode/settings.json
 *.log
 .env
 *.pem
